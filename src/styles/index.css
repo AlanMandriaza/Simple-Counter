@@ -10,3 +10,31 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+.card-footer{
+text-align: center;
+}
+
+.foter{
+    background-color: #343A40;
+}
+
+.container.mt-3{
+
+background-color: #EAECEF;
+display: flex;
+
+}
+
+.row{
+    justify-content: center;
+}
+
+
+.navbar-collapse{
+    justify-content: end;
+}
+
+* {
+    border: 2px solid red;
+  }
