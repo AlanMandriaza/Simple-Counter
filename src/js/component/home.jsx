@@ -38,26 +38,31 @@ const Home = () => {
           cardtittle="Card title 2"
           cardtext="Some quick example text to build on the card title and make up the bulk of the card's content."
           cardfooter="Find Out More!2"
-          clase="col-md-2 iqz card  text-center"
+          clase="col-md-2  card  text-center"
         />
         <Cards
           cardurl="https://picsum.photos/id/3/500/325"
           cardtittle="Card title 3"
           cardtext="Some quick example text to build on the card title and make up the bulk of the card's content."
           cardfooter="Find Out More!3"
-          clase="col-md-2 iqz card  text-center"
+          clase="col-md-2  card  text-center"
         />
         <Cards
           cardurl="https://picsum.photos/id/4/500/325"
           cardtittle="Card title 4"
           cardtext="Some quick example text to build on the card title and make up the bulk of the card's content."
           cardfooter="Find Out More!4"
-          clase="col-md-2 card der text-center"
-        />
+          clase="col-md-2 card der text-center"/>
       </div>
 
-      <Footer />
-    </div>
+      <Footer
+      
+      clase="col-12 justify-content-center"
+    clase2="col-12 foter d-flex justify-content-center"
+     texto="Copyright &copy; Your Website 2023"/>
+      
+      </div>
+
   );
 };
 

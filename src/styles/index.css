@@ -23,10 +23,10 @@
 }
 
 .card {
-  width: 309px;
+  width: 25%;
   height: 457px;
 }
-.container.jumb {
+.container-md.jumb {
   padding-left: 30px;
   padding-bottom: 50px;
 }

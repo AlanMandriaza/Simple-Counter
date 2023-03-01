@@ -4,7 +4,7 @@ const Jumbotron = (props) => {
   return (
     
     <div className="jumbotron jumbotron-fluid">
-    <div className="container col-md-11 jumb">
+    <div className="container-md jumb">
       <h1>{props.tittle}</h1>
       <p>{props.description}</p>
       <a href="#" className="btn btn-primary">{props.label}</a>
@@ -15,7 +15,7 @@ const Jumbotron = (props) => {
 };
 
 
-Jumbotron.PropTypes={
+Jumbotron.propTypes={
   tittle:PropTypes.string,
   description: PropTypes.string,
   label: PropTypes.string,

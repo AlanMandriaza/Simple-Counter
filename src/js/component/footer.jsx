@@ -1,24 +1,22 @@
-
-
+import PropTypes from "prop-types";
 import React from "react";
 
-const Footer=()=>{
-
-return(
+const Footer = (props) => {
+  return (
     <>
-    <footer className="col-12 justify-content-center">
-   
-        <div className="col-12 foter d-flex justify-content-center">
-            <p>Copyright &copy; Your Website 2014</p>
+      <footer className={props.clase}>
+        <div className={props.clase2}>
+          <p>{props.texto}</p>
         </div>
-   
-</footer>
-</>
-);
+      </footer>
+    </>
+  );
 };
+
+Footer.propTypes = {
+  clase: PropTypes.string,
+  clase2: PropTypes.string,
+  texto: PropTypes.string,
+};
+
 export default Footer;
-
-
-
-
-
