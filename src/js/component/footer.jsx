@@ -6,12 +6,12 @@ const Footer=()=>{
 
 return(
     <>
-    <footer class="col-12">
-    <div class="col d-flex justify-content-center">
-        <div class="col foter">
+    <footer className="col-12 justify-content-center">
+   
+        <div className="col-12 foter d-flex justify-content-center">
             <p>Copyright &copy; Your Website 2014</p>
         </div>
-    </div>
+   
 </footer>
 </>
 );
