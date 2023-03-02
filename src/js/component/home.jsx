@@ -6,6 +6,8 @@ import Navbar from "./navbar.jsx";
 import Cards from "./cards.jsx";
 import Jumbotron from "./jumbotron.jsx";
 import Footer from "./footer.jsx";
+
+
 //create your first component
 const Home = () => {
   return (
@@ -17,6 +19,7 @@ const Home = () => {
         boton4="Services"
         boton5="Contact"
       />
+     
       <Jumbotron
         tittle="A Warm Welcome!"
         description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, 
@@ -54,13 +57,16 @@ const Home = () => {
           cardfooter="Find Out More!4"
           clase="col-md-2 card der text-center"/>
       </div>
+      
 
+      
       <Footer
       
       clase="col-12 justify-content-center"
     clase2="col-12 foter d-flex justify-content-center"
      texto="Copyright &copy; Your Website 2023"/>
       
+     
       </div>
 
   );
