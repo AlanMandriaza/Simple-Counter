@@ -1,110 +1,49 @@
-/* 
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
 
-*/
-
-.row {
-  justify-content: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.navbar-collapse {
-  justify-content: end;
+body{
+  display: grid;
+  place-items: center;
+  font-family: 'Share Tech Mono', monospace;
 }
-
-.jumb {
-  background-color: #eaecef;
-}
-
-.card {
-  width: 25%;
-  height: 457px;
-}
-.container-md.jumb {
-  padding-left: 30px;
-  padding-bottom: 50px;
-}
-
-.pie {
-  border-top: 1px solid rgb(226, 226, 226);
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: #f1f1f1;
-}
-
-.col-12.justify-content-center {
-  background-color: #343a40;
-  color: white;
-  padding-top: 16px;
-}
-
-
-.iqz{
-margin-left: -14px;
-}
-.der{
-  margin-right: -14px;
-  }
+.container{
+  width: 100%;
+ 
+  display: flex;
   
+  align-items: center;
+  justify-content: center;
 
+  background-color: #333;
+}
 
-  .center{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    
+h1{
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  padding: 30px 10px;
 }
-.ring{
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    border: 50%;
-}
-.ring::before{
-    position: absolute;
-    content: '';
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
-    animation: ring 2s linear infinite;
-}
-@keyframes ring {
-    0%{
-    transform: rotate(0deg);
-    box-shadow:1px 5px 2px #e65c00;
-}
-    50%{
-    transform: rotate(180deg);
-    box-shadow:1px 5px 2px #18b201;
-}
-    100%{
-    transform: rotate(360deg);
-    box-shadow:1px 5px 2px #0456c8;
-}
+p{
+  display: grid;
+  place-items: center;
+  border: solid 1px #fff;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #ff748c;
 }
 span{
-    color: #737373;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    line-height: 55px;
-    animation: text 3s ease-in-out infinite;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  color: #74ffe7;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
-@keyframes text {
-    50%{
-        color: rgb(179, 7, 50);
-    }
-}
-
-
-

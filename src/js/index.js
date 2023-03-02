@@ -1,16 +1,45 @@
-//import react into the bundle
-import React from "react";
 import ReactDOM from "react-dom";
-
-// include your styles into the webpack bundle
+import React from "react";
+import PropTypes from "prop-types";
 import "../styles/index.css";
 
+function SecondsCounter(props) {
+  return (
+    <>
+<section class="container">
 
-//import your own components
-import Home from "./component/home.jsx";
+
+      
+      <p id="seconds">{props.minutos}</p>
+      <p id="seconds">{props.segundos}</p>
+     
+      </section>
+    </>
+  );
+}
+
+SecondsCounter.propTypes = {
+  segundos: PropTypes.number.isRequired,
+  minutos: PropTypes.number.isRequired,
+};
+
+let segundos = 0;
+let minutos = 0;
+
+setInterval(function () {
+  segundos++;
+
+  if (segundos === 60) {
+    segundos = 0;
+    minutos++;
+  }
+
+  ReactDOM.render(
+    <SecondsCounter segundos={segundos} minutos={minutos} />,
+    document.querySelector("#app")
+  );
+}, 1000);
 
 
 
 
-//render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
